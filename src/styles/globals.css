@@ -1,9 +1,6 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,10 +14,7 @@
     #0071ff33 160deg,
     transparent 360deg
   );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+  --secondary-glow: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
@@ -38,6 +32,82 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --white: #ffffff;
+  --black: #000000;
+  --mousepointerstatus-enabled: #ffffff;
+  --mousepointerstatus-hovered: #eaeaea;
+  --mousepointerstatus-focused: #dadada;
+  --mousepointerstatus-actived: #eaeaea;
+  --mousepointerstatus-disabled-background: rgba(0, 0, 0, 0.12);
+  --mousepointerstatus-disabled-text: rgba(0, 0, 0, 0.26);
+  --primary-90: #00202f;
+  --primary-80: #00405d;
+  --primary-70: #00608c;
+  --primary-60: #0080ba;
+  --primary-50: #00a0e9;
+  --primary-40: #33b3ed;
+  --primary-30: #66c6f2;
+  --primary-20: #99d9f6;
+  --primary-10: #ccecfb;
+  --primary-01: #f3fbff;
+  --primary-05: #e5f5fd;
+  --secondary-90: #203e4d;
+  --secondary-80: #375e71;
+  --secondary-70: #4d7f96;
+  --secondary-60: #649fba;
+  --secondary-50: #7abfdf;
+  --secondary-40: #95cce5;
+  --secondary-30: #afd9ec;
+  --secondary-20: #cae5f2;
+  --secondary-10: #e4f2f9;
+  --secondary-05: #f2f9fc;
+  --yellow-90: #514f10;
+  --yellow-80: #7d7920;
+  --yellow-70: #a8a42f;
+  --yellow-60: #d4ce3f;
+  --yellow-50: #fff84f;
+  --yellow-40: #fff972;
+  --yellow-30: #fffb95;
+  --yellow-20: #fffcb9;
+  --yellow-10: #fffedc;
+  --yellow-05: #fffeed;
+  --red-90: #2f040b;
+  --red-80: #5e0816;
+  --red-70: #8d0c22;
+  --red-60: #bc102d;
+  --red-50: #eb1438;
+  --red-40: #ef4360;
+  --red-30: #f37288;
+  --red-20: #f7a1af;
+  --red-10: #fbd0d7;
+  --red-05: #fde7eb;
+  --green-90: #208a2b;
+  --green-80: #3fa749;
+  --green-70: #5dc368;
+  --green-60: #7ce086;
+  --green-50: #9afda4;
+  --green-40: #aefdb6;
+  --green-30: #c2fec8;
+  --green-20: #d7fedb;
+  --green-10: #ebffed;
+  --green-05: #f5fff6;
+  --text-90: #000000;
+  --text-80: #161513;
+  --text-70: #21201c;
+  --text-60: #2c2a26;
+  --text-50: #37352f;
+  --text-40: #55534d;
+  --text-30: #72706a;
+  --text-20: #908e88;
+  --text-10: #adaba5;
+  --text-text-primary: #37352f;
+  --text-text-secondary: #878682;
+  --text-text-disabled: #d7d7d5;
+  --text-05: #bcbab4;
+  --other-boder: rgba(0, 0, 0, 0.13);
+  --other-background-sahde: #f7f7f7;
+  --other-background-primary: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -78,7 +148,10 @@
   padding: 0;
   margin: 0;
 }
-
+html {
+  /* font-family: var(--jp-font); */
+  font-family: 'Noto Sans JP', sans-serif;
+}
 html,
 body {
   max-width: 100vw;
@@ -86,13 +159,7 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 a {
@@ -104,4 +171,17 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+button {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+  line-height: normal;
 }

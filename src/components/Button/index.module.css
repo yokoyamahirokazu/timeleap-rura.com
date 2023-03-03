@@ -1,0 +1,75 @@
+.button {
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-flex;
+  transition: all 0.16s ease-out;
+  font-weight: 500;
+  line-height: normal;
+  font-family: var(--jp-font);
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.button:hover {
+  filter: drop-shadow(0px 2px 8px rgba(0, 64, 93, 0.32));
+  transform: scale(1.04);
+}
+.button:active {
+  filter: none;
+  transform: scale(1);
+}
+.buttonSmall {
+  font-size: 13px;
+  padding: 6px 14px 7.5px;
+}
+.buttonMedium {
+  font-size: 15px;
+  padding: 9px 18px 11px;
+}
+.buttonLarge {
+  font-size: 18px;
+  padding: 12.5px 24px 15.5px;
+}
+.buttonExtraLarge {
+  font-size: 20px;
+  padding: 16px 32px 19px;
+}
+.buttonPrimary {
+  color: white;
+  background-color: var(--primary-50);
+}
+.buttonPrimary:hover {
+  background-color: var(--primary-40);
+}
+.buttonPrimary:active {
+  background-color: var(--primary-60);
+}
+.buttonLight {
+  color: var(--primary-90);
+  background-color: var(--primary-10);
+}
+.buttonLight:hover {
+  background-color: var(--primary-05);
+}
+.buttonLight:active {
+  background-color: var(--primary-20);
+}
+.buttonRed {
+  color: var(--white);
+  background-color: var(--red-50);
+}
+.buttonRed:hover {
+  background-color: var(--red-40);
+}
+.buttonRed:active {
+  background-color: var(--red-60);
+}
+.buttonDark {
+  color: var(--white);
+  background-color: var(--primary-80);
+}
+.buttonDark:hover {
+  background-color: var(--primary-70);
+}
+.buttonDark:active {
+  background-color: var(--primary-90);
+}
