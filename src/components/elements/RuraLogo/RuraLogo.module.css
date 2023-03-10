@@ -1,0 +1,62 @@
+.ruraLogo {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+.ruraLogo svg {
+  margin: 0;
+  height: auto;
+  width: 100%;
+}
+
+.ruraLogoFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ruraLogo.colorPrimary svg path {
+  fill: var(--primary-50);
+}
+.ruraLogo.colorWhite svg path {
+  fill: var(--white);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoText {
+  width: 80%;
+  margin: 0 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoTextCenter {
+  margin: 0 auto 8%;
+}
+.logoTextRight {
+  margin: 0 0 8% 20%;
+}
+.logoTextFull {
+  width: 96%;
+  margin: 0 0 8% 1%;
+}
+
+.logoOrder1 {
+  order: 1;
+}
+.textOrder2 {
+  order: 2;
+}
+
+.ruraLogoFlex .logoText {
+  width: 80%;
+  margin: 0 5% 0 0;
+}
+.ruraLogoFlex .logoTextRight {
+  width: 80%;
+  margin: 0 0 0 5%;
+}

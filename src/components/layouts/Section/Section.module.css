@@ -1,0 +1,22 @@
+.section {
+  position: relative;
+  margin: 0;
+  padding: 96px 0;
+  width: 100%;
+}
+
+.section.bgLight {
+  background-color: var(--primary-05);
+}
+.section.bgPrimary {
+  background-color: var(--primary-50);
+}
+.section.bgDark {
+  background-color: var(--primary-70);
+}
+
+.sectionInner {
+  max-width: 1024px;
+  width: 80vw;
+  margin: 0 auto;
+}

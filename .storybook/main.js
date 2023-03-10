@@ -2,6 +2,7 @@ module.exports = {
   typescript: { reactDocgen: false },
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
+    'storybook-addon-next',
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
@@ -19,4 +20,18 @@ module.exports = {
   core: {
     builder: '@storybook/builder-webpack5',
   },
+  webpackFinal: async (config) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: [
+        {
+          loader: '@svgr/webpack',
+        },
+      ],
+    })
+    const fileLoaderRule = config.module.rules.find((rule) => rule.test && rule.test.test('.svg'))
+    fileLoaderRule.exclude = /\.svg$/
+    return config
+  },
+  staticDirs: ['../public'],
 }

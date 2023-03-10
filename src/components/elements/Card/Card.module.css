@@ -1,0 +1,52 @@
+.card {
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.radiusNone {
+  border-radius: 0;
+}
+.radiusSmall {
+  border-radius: 4px;
+}
+.radiusRegular {
+  border-radius: 8px;
+}
+.radiusMedium {
+  border-radius: 16px;
+}
+.radiusLarge {
+  border-radius: 24px;
+}
+
+.paddingNone {
+  padding: 0;
+}
+.paddingSmall {
+  padding: 8px;
+}
+.paddingRegular {
+  padding: 16px;
+}
+.paddingMedium {
+  padding: 24px;
+}
+.paddingLarge {
+  padding: 32px;
+}
+
+.shadowNone {
+  box-shadow: none;
+}
+.shadow10 {
+  box-shadow: var(--shadow-10);
+}
+.shadow20 {
+  box-shadow: var(--shadow-20);
+}
+.shadow30 {
+  box-shadow: var(--shadow-30);
+}
+.shadow40 {
+  box-shadow: var(--shadow-40);
+}

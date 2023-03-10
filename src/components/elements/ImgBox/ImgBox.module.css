@@ -1,0 +1,65 @@
+.body {
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+}
+.headline {
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+}
+
+.body.weightLight {
+  font-weight: 300;
+}
+.body.weightRegular {
+  font-weight: 400;
+}
+.body.weightBold {
+  font-weight: 500;
+}
+.headline.weightLight {
+  font-weight: 400;
+}
+.headline.weightRegular {
+  font-weight: 500;
+}
+.headline.weightBold {
+  font-weight: 700;
+}
+
+.body.extraSmall {
+  font-size: 11px;
+}
+.body.small {
+  font-size: 13px;
+}
+.body.regular {
+  font-size: 15px;
+}
+.body.medium {
+  font-size: 18px;
+}
+.body.large {
+  font-size: 20px;
+}
+.body.extralarge {
+  font-size: 24px;
+}
+
+.headline.extraSmall {
+  font-size: 12px;
+}
+.headline.small {
+  font-size: 16px;
+}
+.headline.regular {
+  font-size: 20px;
+}
+.headline.medium {
+  font-size: 24px;
+}
+.headline.large {
+  font-size: 32px;
+}
+.headline.extralarge {
+  font-size: 40px;
+}

@@ -8,9 +8,12 @@
   line-height: normal;
   font-family: var(--jp-font);
   font-family: 'Noto Sans JP', sans-serif;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.05em;
 }
 .button:hover {
-  filter: drop-shadow(0px 2px 8px rgba(0, 64, 93, 0.32));
+  filter: drop-shadow(0px 2px 8px rgba(0, 64, 93, 0.24));
   transform: scale(1.04);
 }
 .button:active {
@@ -21,16 +24,16 @@
   font-size: 13px;
   padding: 6px 14px 7.5px;
 }
-.buttonMedium {
+.buttonRegular {
   font-size: 15px;
   padding: 9px 18px 11px;
 }
-.buttonLarge {
-  font-size: 18px;
+.buttonMedium {
+  font-size: 17px;
   padding: 12.5px 24px 15.5px;
 }
-.buttonExtraLarge {
-  font-size: 20px;
+.buttonLarge {
+  font-size: 19px;
   padding: 16px 32px 19px;
 }
 .buttonPrimary {
@@ -45,13 +48,13 @@
 }
 .buttonLight {
   color: var(--primary-90);
-  background-color: var(--primary-10);
+  background-color: var(--secondary-10);
 }
 .buttonLight:hover {
-  background-color: var(--primary-05);
+  background-color: var(--secondary-05);
 }
 .buttonLight:active {
-  background-color: var(--primary-20);
+  background-color: var(--secondary-20);
 }
 .buttonRed {
   color: var(--white);
@@ -72,4 +75,45 @@
 }
 .buttonDark:active {
   background-color: var(--primary-90);
+}
+.buttonWhite {
+  color: var(--primary-90);
+  background-color: var(--white);
+}
+.buttonWhite:hover {
+  background-color: var(--white);
+}
+.buttonWhite:active {
+  background-color: var(--secondary-10);
+}
+.button svg {
+  display: block;
+}
+.buttonSmall p {
+  padding: 0 6px;
+}
+.buttonRegular p {
+  padding: 0 8px;
+}
+.buttonMedium p {
+  padding: 0 10px;
+}
+.buttonLarge p {
+  padding: 0 12px;
+}
+.buttonSmall svg {
+  width: 12px;
+  height: 12px;
+}
+.buttonRegular svg {
+  width: 16px;
+  height: 16px;
+}
+.buttonMedium svg {
+  width: 20px;
+  height: 20px;
+}
+.buttonLarge svg {
+  width: 24px;
+  height: 24px;
 }

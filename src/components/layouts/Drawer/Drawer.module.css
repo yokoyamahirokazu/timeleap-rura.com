@@ -1,0 +1,161 @@
+.pcMenu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.pcMenuNav {
+  display: block;
+}
+.drawer {
+  display: block;
+  z-index: 3;
+  background-color: var(--white);
+  width: 90vw;
+  max-width: 320px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translate(100%, 0);
+  transition: all 0.2s ease-out;
+}
+.drawer.active {
+  transform: translate(0, 0);
+}
+
+.drawerButtonBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 16px;
+}
+
+.drawerButtonBox a {
+  margin: 0 0 0 8px;
+}
+
+.drawerButtonBox a:first-child {
+  margin: 0;
+}
+
+.drawer_overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+
+.drawer_overlay.active {
+  display: block;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.drawer_btn {
+  position: relative;
+  display: block;
+  height: 25px;
+  width: 25px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: none;
+  display: none;
+  margin: 0 0 0 24px;
+}
+
+.drawer_btn span,
+.drawer_btn span:before,
+.drawer_btn span:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 25px;
+  border-radius: 2px;
+  background-color: var(--primary-90);
+  position: absolute;
+}
+
+.drawer_btn span:before {
+  bottom: 8px;
+}
+
+.drawer_btn span:after {
+  top: 8px;
+}
+
+.drawer_btn.close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  z-index: 5;
+}
+
+.drawer_btn.close span {
+  width: 0;
+}
+.drawer_btn.close span:before,
+.drawer_btn.close span:after {
+  background-color: var(--primary-90);
+  width: 25px;
+  /*メニューオープン時は真ん中の線を透明にする*/
+}
+
+.drawer_btn.close span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+.drawer_btn.close span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.drawerInner {
+  padding: 48px 16px;
+}
+
+.drawerInner nav ul {
+  display: block;
+}
+
+.drawerInner nav ul li a {
+  font-size: 15px;
+}
+
+.drawerInner .drawerButtonBox {
+  display: block;
+  margin: 32px 0 0;
+}
+
+.drawerInner .drawerButtonBox a {
+  margin: 16px 0 0;
+}
+.drawerInner .drawerButtonBox a:first-child {
+  margin: 0;
+}
+
+@media screen and (max-width: 920px) {
+  .drawerButton {
+    margin: 0 0 0 8px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .pcMenuNav {
+    display: none;
+  }
+  .drawer_btn {
+    display: block;
+  }
+}
+@media screen and (max-width: 520px) {
+  .pcMenu .drawerButtonBox {
+    display: none;
+  }
+}
