@@ -1,0 +1,42 @@
+.footer {
+  position: relative;
+}
+.footerTop {
+  background-color: var(--primary-70);
+  padding: 32px;
+}
+.footerTopInner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footerTop nav ul {
+  justify-content: flex-start;
+}
+.footerTop nav ul li a {
+  color: var(--white);
+}
+
+.footerTop nav ul li a:hover {
+  background-color: var(--primary-60);
+}
+.footerTop nav ul li a:active {
+  background-color: var(--primary-80);
+}
+
+.footerButtonBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footerButtonBox a {
+  margin: 0 0 0 16px;
+}
+.footerBottom {
+  background-color: var(--primary-60);
+  padding: 32px;
+}
+.footerLogo {
+  max-width: 240px;
+}
